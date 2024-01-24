@@ -10,21 +10,21 @@ public class Main {
 
         //task2
         System.out.print("Задача2\n");
-        for (int i = 0; i <= 2; i++) {
+        for (int i = 0; i <= array1.length - 1; i++) {
             System.out.print(array1[i]);
             if (i != 2) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 0; i <= 2; i++) {
+        for (int i = 0; i <= array2.length - 1; i++) {
             System.out.print(array2[i]);
             if (i != 2) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 0; i <= 9; i++) {
+        for (int i = 0; i <= array3.length - 1; i++) {
             System.out.print(array3[i]);
             if (i != 9) {
                 System.out.print(", ");
@@ -34,21 +34,21 @@ public class Main {
 
         //task3
         System.out.print("Задача3\n");
-        for (int i = 2; i >= 0; i--) {
+        for (int i = array1.length - 1; i >= 0; i--) {
             System.out.print(array1[i]);
             if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 2; i >= 0; i--) {
+        for (int i = array2.length - 1; i >= 0; i--) {
             System.out.print(array2[i]);
             if (i != 0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
-        for (int i = 9; i >= 0; i--) {
+        for (int i = array3.length - 1; i >= 0; i--) {
             System.out.print(array3[i]);
             if (i != 0) {
                 System.out.print(", ");
@@ -57,16 +57,19 @@ public class Main {
 
         //task4
         System.out.print("\nЗадача4\n");
-        for (int i = 0; i <= array1.length - 1; i++) {
-            if (array1[i] % 2 == 1) {
-                System.out.print(array1[i] + 1);
+        int i = 0;
+        int[] array4 = {-5, 0, -4, 2, 5, 90, -523};
+        while (i != array4.length) {
+            if (Math.abs(array4[i]) % 2 == 1) {
+                System.out.print(array4[i] + 1);
             }
             else {
-                System.out.print(array1[i]);
+                System.out.print(array4[i]);
             }
-            if (i != array1.length - 1) {
+            if (i != array4.length - 1) {
                 System.out.print(", ");
             }
+            i++;
         }
     }
 }
